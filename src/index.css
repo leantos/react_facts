@@ -1,34 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  background: #27292c;
-  color: #ffffff;
-  margin: 10px;
+  background-image: url(/src/assets/reactbg.jpg);
+  background-position: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-color: #24282e;
+  margin: 0;
+  font-family: Inter,sans-serif;
 }
 
-.nav-list{
-  list-style: none;
-  display: flex;
-}
-
-.header{
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-}
-
-.nav-list li{
-  font-size: 1.1rem;
-  margin-left: 20px;
+.title{
+  color: #01dafe;
+  font-size: 35px;
+  margin-left: 10px;
 }
 
 .logo{
-  width: 55px;
+  margin-left: 10px;
+  width: 40px;
 }
 
-.footer{
-  padding: 15px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.584);
+.navbar{
+  background-color: #1e1f26;
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.header{
+  height: 100%;
+}
+
+.facts{
+  margin: 50px;
+}
+
+.heading{
+  color: aliceblue;
+  font-size: 2.4rem;
+}
+
+.list > li{
+  color: rgb(190, 190, 190);
+  margin-block: 10px;
+  font-weight: bold;
+}
+
+.list > li::marker{
+  color: #01dafe;
 }

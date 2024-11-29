@@ -1,7 +1,10 @@
 export function NavBar(){
     return(
-        <>
-            <h1>Navbar goes here</h1>
-        </>
+        <header className="header">
+            <nav className="navbar">
+                <img src="/src/assets/react.webp" className="logo" />
+                <span className="title">ReactFacts</span>
+            </nav>
+        </header>
     )
 }
