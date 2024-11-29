@@ -1,15 +1,13 @@
-import {Header} from './Header';
-import { MainContent } from './MainContent';
-import {Footer} from './Footer';
+import { NavBar } from "./components/NavBar";
+import { Main } from "./components/Main";
 
-function App() {
+function App(){
   return(
     <>
-      <Header/>
-      <MainContent/>
-      <Footer/>
+      <NavBar/>
+      <Main/>
     </>
-  );
+  )
 }
 
 export default App;
