@@ -9,12 +9,12 @@ body{
   background-repeat: no-repeat;
   background-color: #24282e;
   margin: 0;
-  font-family: Inter,sans-serif;
+  font-family: 'Inter';
 }
 
 .title{
   color: #01dafe;
-  font-size: 35px;
+  font-size: 30px;
   margin-left: 10px;
 }
 
