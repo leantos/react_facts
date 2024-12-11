@@ -1,33 +1,40 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: url(/src/assets/reactbg.jpg);
   background-position: center;
   background-position-y: top;
   background-repeat: no-repeat;
   background-color: #24282e;
   margin: 0;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 
-.title{
+.title {
   color: #01dafe;
   font-size: 30px;
   margin-left: 10px;
-  transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient(-50deg, white, #01dafe, white);
+  background-size: 200%;
+  background: -webkit-linear-gradient(50deg, #0192ac, #01dafe, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.logo{
+.logo {
+  margin-left: 10px;
+  width: 40px;
+  transition: transform 800ms ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(90deg);
   margin-left: 10px;
   width: 40px;
 }
 
-.navbar{
+.navbar {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
   background-color: #1e1f26;
   display: flex;
@@ -35,32 +42,45 @@ body{
   height: 90px;
 }
 
-.header{
+.header {
   height: 100%;
 }
 
-.facts{
+.facts {
   margin: 50px;
 }
 
-.heading{
-  color: aliceblue;
+.heading {
   font-size: 2.4rem;
+  color: aliceblue;
+  background: -webkit-linear-gradient(50deg, #01dafe, white, #01dafe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%; /* Double the size for smooth animation */
+  background-position: 0 0;
+  transition: background-position 500ms ease-in-out;
+  display: inline-block;
 }
 
-.heading:hover{
-  color: aliceblue;
-  font-size: 2.4rem;
-  text-decoration: underline;
-  text-underline-offset: 10px;
+.heading:hover {
+  background-position: 100% 0;
 }
 
-.list > li{
+.list > li {
+  color: rgb(190, 190, 190);
+  margin-block: 20px;
+  font-weight: light;
+  font-size: medium;
+  transition: font-size 400ms;
+}
+
+.list > li::marker {
+  color: #01dafe;
+}
+
+.list > li:hover {
   color: rgb(190, 190, 190);
   margin-block: 10px;
   font-weight: bold;
-}
-
-.list > li::marker{
-  color: #01dafe;
+  font-size: large;
 }
