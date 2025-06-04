@@ -2,6 +2,9 @@
 
 **React Facts** is a simple static ReactJS application that displays interesting facts about React. It's designed as a beginner-friendly project to demonstrate the basics of React, including component structure, JSX, and styling.
 
+🔗 **Live Demo**: [react-facts-07.netlify.app](https://react-facts-07.netlify.app)  
+
+
 ---
 
 ## 🚀 Features
